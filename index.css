@@ -57,6 +57,7 @@ body {
 
 #form-town{
   width: 44em;
+  margin-right: 0.5em;
 }
 
 input[type="text"], 
