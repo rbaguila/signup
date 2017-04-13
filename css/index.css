@@ -55,10 +55,11 @@ body {
   border-color: #19b9e7;
 }
 
-#form-town{
-  width: 44em;
-  margin-right: 0.5em;
-}
+/*#form-town{*/
+  /*width: 53vw;*/
+  /*max-width: 44em;*/
+  /*margin-right: 0.5em;*/
+/*}*/
 
 input[type="text"], 
 input[type="date"], 
