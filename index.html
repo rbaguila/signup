@@ -3,20 +3,85 @@
 
 <head>
   <title>Signup Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
 
-<body>
-  <h1>{{hello}}</h1>
-  <input type="text" ng-model="hello">
+<body>  
+  <div class="container">
+      <div class="form-box">
+        <div class="form-top">
+          <div class="form-top-left">
+            <h3>Sign up now</h3>
+              <p>Fill in the form below to get registered:</p>
+          </div>
+          <div class="form-top-right">
+            <i class="fa fa-pencil"></i>
+          </div>
+          </div>
+          <div class="form-bottom">
+        <form role="form" action="" method="post" class="registration-form">
+          <div class="form-group">
+            <label for="form-job-title">Job title</label>
+              <input type="text" name="form-job-title" placeholder="Job title" class="form-job-title form-control" id="form-job-title">
+          </div>
+          <div class="form-group">
+            <label for="form-first-name">First name</label>
+            <input type="text" name="form-first-name" placeholder="First name" class="form-first-name form-control" id="form-first-name">
+          </div>
+            
+          <div class="form-group">
+            <label for="form-last-name">Last name</label>
+            <input type="text" name="form-last-name" placeholder="Last name" class="form-last-name form-control" id="form-last-name">
+          </div>
+
+          <div class="form-group">
+            <label for="form-street">Street</label>
+            <input type="text" name="form-street" placeholder="Street" class="form-street form-control" id="form-street">
+            
+            <div class="form-inline">
+              <label for="form-street">Town</label>
+              <input type="text" name="form-town" placeholder="Town" class="form-town form-control" id="form-town">
+              <label for="form-postcode">Postal Code</label>
+              <input type="text" name="form-postcode" placeholder="Postal Code" class="form-postcode form-control" id="form-postcode">
+            </div>
+            
+          </div>
+
+          <div class="form-group">
+              <label for="form-birthdate">Birthdate</label>
+              <input type="date" name="form-birthdate" class="form-birthdate form-control" id="form-birthdate">
+          </div>
+            
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="text" name="form-email" placeholder="Email" class="form-email form-control" id="form-email">
+          </div>
+
+          <div class="form-group checkbox">
+            <label>
+              <input type="checkbox" value="yes"> <p> Please confirm if applicant is 18+ years of age </p>
+            </label>
+          </div>
+            
+            <button type="submit" class="btn">Sign me up!</button>
+        </form>
+      </div>
+      </div>
+
+    </div> <!-- /container -->
+
 </body>
 
 </html>
